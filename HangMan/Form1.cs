@@ -154,6 +154,7 @@ namespace HangMan
 
             // Update the scoreboard list box
             UpdateScoreBoardListBox();
+            
         }
 
         private void UserInput_TextChanged(object sender, EventArgs e)
