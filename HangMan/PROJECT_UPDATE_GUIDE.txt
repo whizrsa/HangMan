@@ -1,3 +1,16 @@
+# Project File Update Guide
+
+Since Visual Studio has the solution open, you'll need to manually update the .csproj file.
+
+## Step-by-Step Instructions:
+
+### 1. Close Visual Studio completely
+
+### 2. Open HangMan.csproj in Notepad or any text editor
+
+### 3. Replace the ENTIRE file contents with this:
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -69,7 +82,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Converters\BoolToVisibilityConverter.cs" />
-    <Compile Include="Converters\GameConverters.cs" />
     <Compile Include="Models\Difficulty.cs" />
     <Compile Include="Models\GameState.cs" />
     <Compile Include="Models\HighScore.cs" />
@@ -89,7 +101,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="EMOJI_FIXED.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,3 +120,27 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+```
+
+### 4. Save the file
+
+### 5. Reopen Visual Studio and load the solution
+
+### 6. You may see old files (Form1.cs, etc.) - you can remove them from the project:
+   - Right-click on Form1.cs ? Remove (don't delete from disk yet, just in case)
+   - Do the same for Form1.Designer.cs and Form1.resx
+   - You can keep Program.cs or remove it (not needed for WPF)
+
+### 7. Build the project (Ctrl+Shift+B)
+
+### 8. Run and enjoy your modern Hangman game! (F5)
+
+## Quick Verification Checklist:
+- [ ] Visual Studio is completely closed
+- [ ] .csproj file is updated and saved
+- [ ] Reopen Visual Studio
+- [ ] All new files appear in Solution Explorer
+- [ ] Project builds successfully
+- [ ] Application runs and shows start screen
+
+If you encounter any issues, check the README.md for troubleshooting tips!
