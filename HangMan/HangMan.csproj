@@ -119,8 +119,10 @@
     </Compile>
     <None Include="CLEANUP_COMPLETE.md" />
     <None Include="CLEANUP_SUMMARY.md" />
+    <None Include="COPYRIGHT_PROTECTION.md" />
     <None Include="EMOJI_FIXED.md" />
     <None Include="HangMan_TemporaryKey.pfx" />
+    <None Include="LICENSE" />
     <None Include="PRD.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -131,6 +133,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="PUSH_SUCCESS.md" />
+    <None Include="README_NEW.md" />
     <None Include="TODO.md" />
   </ItemGroup>
   <ItemGroup>
