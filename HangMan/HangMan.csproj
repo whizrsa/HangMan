@@ -117,6 +117,7 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="CLEANUP_COMPLETE.md" />
     <None Include="CLEANUP_SUMMARY.md" />
     <None Include="EMOJI_FIXED.md" />
     <None Include="HangMan_TemporaryKey.pfx" />
